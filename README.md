@@ -1,4 +1,4 @@
-# MAHA 업무분장 스튜디오
+# MACH 업무분장 스튜디오
 
 부서별 조직도와 업무분장을 함께 편집하는 독립 웹 모듈입니다. 가상 구성원 10명과 A–Z 업무 26개를 예제로 제공합니다.
 
@@ -43,10 +43,10 @@ python3 -m http.server 4318 --bind 127.0.0.1
 npm test
 ```
 
-## MAHA 통합
+## MACH 통합
 
-- 공개 PROJECT MACH: https://erakeun.github.io/era-works/#project-25
-- 공개 실행 도구: https://erakeun.github.io/era-works/tools/rolemap/
+- 공개 PROJECT MACH: https://erakeun.github.io/ERICAAI/#project-28
+- 공개 실행 도구: https://erakeun.github.io/ERICAAI/rolemap/
 - 개인 작업 주소: https://maha-rolemap.hyungkeun.chatgpt.site/
 - 개인마하: https://personal-mach.hyungkeun.chatgpt.site/#project=maha-rolemap&tab=links
 
@@ -54,10 +54,10 @@ npm test
 
 독립 정적 웹 모듈이며, 기존 포털에서는 도구 링크로 연결할 수 있습니다. 서버 로그인과 공동 저장은 포함하지 않습니다.
 
-1. 루트의 `index.html`, `style.css`, `app.js`, `model.js` 파일 4개를 기존 MAHA 웹 서버의 `/rolemap/` 같은 하위 경로로 배치할 수 있습니다. 리소스 참조는 상대 경로입니다.
+1. 루트의 `index.html`, `style.css`, `app.js`, `model.js` 파일 4개를 기존 MACH 웹 서버의 `/rolemap/` 같은 하위 경로로 배치할 수 있습니다. 리소스 참조는 상대 경로입니다.
 2. 기존 메뉴에서 해당 경로로 연결하거나, 같은 서비스 내 별도 화면으로 구성할 수 있습니다.
 3. `model.js`의 ID 기반 데이터 구조와 유효성 검증은 UI로부터 분리되어 있습니다.
-4. 조직 공용 서비스로 확장할 때 `app.js`의 데이터 초기화·`save()`·`exportJSON()` 경계에 기존 MAHA API를 연결합니다. 저장 성공 응답을 확인한 뒤 성공을 표시해야 합니다.
+4. 조직 공용 서비스로 확장할 때 `app.js`의 데이터 초기화·`save()`·`exportJSON()` 경계에 기존 MACH API를 연결합니다. 저장 성공 응답을 확인한 뒤 성공을 표시해야 합니다.
 5. 서버는 부서별 조회/편집 권한, 데이터 검증, 동시 편집 버전 검사(예: revision 또는 ETag), 변경 이력을 제공해야 합니다. 현재 클라이언트 검증은 서버 권한 검사를 대신하지 않습니다.
 6. 인원 교체는 현 구조에서 동일한 업무 자리의 `member.id`를 유지하고 이름을 변경합니다. 조직 전체의 직원 ID를 별도로 관리하는 서비스라면 `positionId`와 `employeeId`를 분리해 연결하는 것이 적합합니다.
 
