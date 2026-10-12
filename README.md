@@ -45,6 +45,13 @@ npm test
 
 ## MAHA 통합
 
+- 공개 PROJECT MACH: https://erakeun.github.io/era-works/#project-25
+- 공개 실행 도구: https://erakeun.github.io/era-works/tools/rolemap/
+- 개인 작업 주소: https://maha-rolemap.hyungkeun.chatgpt.site/
+- 개인마하: https://personal-mach.hyungkeun.chatgpt.site/#project=maha-rolemap&tab=links
+
+공개 MACH에는 루트의 실행 파일 네 개만 복사해 배포합니다. 테스트·문서는 이 저장소에서 관리하며, 실제 부서 자료는 어느 배포본에도 포함하지 않습니다.
+
 독립 정적 웹 모듈이며, 기존 포털에서는 도구 링크로 연결할 수 있습니다. 서버 로그인과 공동 저장은 포함하지 않습니다.
 
 1. 루트의 `index.html`, `style.css`, `app.js`, `model.js` 파일 4개를 기존 MAHA 웹 서버의 `/rolemap/` 같은 하위 경로로 배치할 수 있습니다. 리소스 참조는 상대 경로입니다.
